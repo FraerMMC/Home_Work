@@ -158,3 +158,23 @@ public sealed class PassengerPlane : Airplane
         Console.WriteLine($"Длительность полёта: {_flightDuration} ч");
     }
 }
+
+public class Goods
+{
+    public string _goodName;
+    public int _goodCount;
+    public int _goodCost;
+
+    public Goods(string goodName, int goodCount, int goodCost)
+    {
+        _goodName = goodName;
+        _goodCount = goodCount;
+        _goodCost = goodCost;
+    }
+
+    public void ShowInfo()
+    {
+        Console.WriteLine($"Название товара: {_goodName}.|| Кол-во в автомате: {_goodCount}.|| Цена: {_goodCost}");
+    }
+
+}
